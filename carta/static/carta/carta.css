@@ -1,0 +1,47 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    }
+
+/*************** Overall Votacion App Styles ***************/ 
+html {
+/*     background: #29abe2; */
+/*     height: 100vh; */
+    font-family: -apple-system, BlinkMacSystemFont, 
+    "Segoe UI", "Roboto", "Oxygen", 
+    "Ubuntu", "Cantarell", "Fira Sans", 
+    "Droid Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.15;
+    margin: 0.2rem;
+    }
+
+/* Lighter and bigger titles with some bottom margin */
+h2, h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 0.6rem;
+    }
+    
+h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.6rem;
+    }    
+
+
+/* Bordered table with colored header */
+table, th, td {
+    border: 1px solid #cbcbcb;
+    border-collapse: collapse;
+    }
+
+thead, th {
+    background-color: #ff6600;
+    color: #fff;
+    }
+
+td, th {
+    padding: .5em 1em;
+    }

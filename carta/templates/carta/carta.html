@@ -1,10 +1,19 @@
 {% load custom_filters %}
+{% load static %}
+
 <!doctype html>
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
     <title>Carta CafeConcert</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href=" https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css " rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href={% static "carta/icon_32.png" %}>
+    <link rel="stylesheet" href={% static "carta/carta.css" %} />
+  
   </head>
+  
   <body>
   
     <h2>Café Concert CAYUMAN 2025</h2>
@@ -23,3 +32,5 @@
       {% endfor %}
       </tbody>
     </table>
+  </body>
+</html>
