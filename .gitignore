@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Django stuff:
+.env
+db.sqlite3
+
+# Kate and dolphin
+*.kate-swp
+.directory
+
+# Ghostwriter bug
+widgets.qss

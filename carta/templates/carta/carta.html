@@ -1,0 +1,25 @@
+{% load custom_filters %}
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Carta CafeConcert</title>
+  </head>
+  <body>
+  
+    <h2>Café Concert CAYUMAN 2025</h2>
+    <h3>Carta de productos disponibles</h3>
+    <table id="carta-table">
+      <thead>
+      <tr><th>Item</th><th>Precio</th><th>Disponibles</th></tr>
+      </thead>
+      <tbody>
+      {% for item in items %}
+        <tr>
+          <td>{{ item.name }}</td>
+          <td>{{ item.prize|pesos_cl }}</td>
+          <td>{{ item.stock }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
